@@ -222,6 +222,16 @@ input, textarea { font: inherit; letter-spacing: inherit; }
 .lang button { color: var(--muted); padding: 4px 2px; transition: color .25s; }
 .lang button:hover { color: var(--text); }
 .lang button[aria-pressed="true"] { color: var(--accent); }
+.login-btn {
+  display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 18px;
+  border-radius: var(--radius); border: 1px solid rgba(var(--accent-rgb), .5);
+  color: var(--accent); font-size: 15px; letter-spacing: -0.01em; white-space: nowrap;
+  background: rgba(var(--accent-rgb), .06);
+  transition: background .25s, color .25s, border-color .25s;
+}
+.login-btn .ico { width: 17px; height: 17px; margin: 0; color: currentColor; }
+.login-btn:hover { background: var(--accent); border-color: var(--accent); color: #161719; }
+.menu nav a.menu-login { color: var(--accent); }
 html[lang="sk"] .hero h1 { font-size: clamp(38px, 5.55vw, 80px); }
 
 .burger {
@@ -1172,6 +1182,7 @@ body.menu-open .menu nav a { opacity: 1; transform: none; }
   .qa button { font-size: 16px; gap: 14px; }
   .head-right { gap: 12px; }
   .lang { font-size: 13px; }
+  .login-btn { height: 36px; padding: 0 12px; font-size: 14px; gap: 6px; }
   .clocks { gap: 4px; }
   .pill { font-size: 11px; }
   .field input, .field textarea { font-size: 18px; padding: 18px 20px 18px 50px; }
@@ -1191,4 +1202,9 @@ body.menu-open .menu nav a { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
   .reveal { opacity: 1; transform: none; }
+}
+
+@media (max-width: 370px) {
+  .login-btn { width: 36px; padding: 0; justify-content: center; }
+  .login-btn span { display: none; }
 }

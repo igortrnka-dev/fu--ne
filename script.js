@@ -579,6 +579,12 @@
       if (img.getAttribute('src') !== want) img.setAttribute('src', want);
     });
     $$('[data-lang]').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang));
+    // App sign-in opens in the same language as the website.
+    $$('[data-app-link]').forEach(a => {
+      const u = new URL(a.getAttribute('href'), location.href);
+      u.searchParams.set('lang', lang);
+      a.setAttribute('href', u.toString());
+    });
   }
 
   $$('[data-lang]').forEach(b => b.addEventListener('click', () => {

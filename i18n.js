@@ -22,6 +22,7 @@ window.FUNE_I18N = {
     'Testimonials': 'Referencie',
     'Contact': 'Kontakt',
     'Sign Up': 'Odber noviniek',
+    'Log in': 'Prihlásiť sa',
     'Terms of Service': 'Obchodné podmienky',
     'Terms & Service': 'Obchodné podmienky',
     'Privacy Policy': 'Ochrana súkromia',
