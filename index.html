@@ -1,0 +1,1095 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FU—NE® — AI Automation &amp; Content Agency</title>
+  <meta name="description" content="AI agency for automating and managing AI content. We create and run AI models — content, fan chat and publishing on autopilot.">
+  <meta name="theme-color" content="#161719">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..700;1,14..32,300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=17">
+</head>
+<body>
+
+<!-- ======================= SVG LIBRARY ======================= -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="g-top" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c3c7c6"/></linearGradient>
+    <linearGradient id="g-left" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dfe2e1"/><stop offset="1" stop-color="#7a7e7d"/></linearGradient>
+    <linearGradient id="g-right" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a3a7a6"/><stop offset="1" stop-color="#454847"/></linearGradient>
+    <linearGradient id="g-dtop" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5a5c5e"/><stop offset="1" stop-color="#2b2c2e"/></linearGradient>
+    <linearGradient id="g-dleft" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#36383a"/><stop offset="1" stop-color="#121314"/></linearGradient>
+    <linearGradient id="g-dright" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#232426"/><stop offset="1" stop-color="#08090a"/></linearGradient>
+    <linearGradient id="g-cyl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2e302f"/><stop offset=".32" stop-color="#d9dddc"/><stop offset=".6" stop-color="#8b8f8e"/><stop offset="1" stop-color="#252626"/></linearGradient>
+    <linearGradient id="g-dcyl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0c0c0d"/><stop offset=".35" stop-color="#4a4c4e"/><stop offset=".65" stop-color="#232425"/><stop offset="1" stop-color="#090909"/></linearGradient>
+    <linearGradient id="g-cyltop" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7f9f8"/><stop offset="1" stop-color="#9da1a0"/></linearGradient>
+    <linearGradient id="g-dcyltop" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5b5e60"/><stop offset="1" stop-color="#1e1f21"/></linearGradient>
+    <linearGradient id="g-cylv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a2b2b"/><stop offset=".3" stop-color="#e3e6e5"/><stop offset=".55" stop-color="#9a9e9d"/><stop offset="1" stop-color="#1e1f1f"/></linearGradient>
+    <radialGradient id="g-glow"><stop offset="0" style="stop-color:var(--accent);stop-opacity:1"/><stop offset=".45" style="stop-color:var(--accent);stop-opacity:.45"/><stop offset="1" style="stop-color:var(--accent);stop-opacity:0"/></radialGradient>
+    <radialGradient id="g-ray" gradientUnits="userSpaceOnUse" cx="400" cy="452" r="420"><stop offset="0" style="stop-color:var(--accent);stop-opacity:.9"/><stop offset="1" style="stop-color:var(--accent);stop-opacity:0"/></radialGradient>
+    <radialGradient id="g-glass" cx=".35" cy=".35" r=".8"><stop offset="0" style="stop-color:var(--accent);stop-opacity:.9"/><stop offset=".35" stop-color="#0b2416"/><stop offset="1" stop-color="#040605"/></radialGradient>
+    <linearGradient id="g-beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--accent);stop-opacity:0"/><stop offset=".55" style="stop-color:var(--accent);stop-opacity:.55"/><stop offset="1" style="stop-color:var(--accent);stop-opacity:1"/></linearGradient>
+    <linearGradient id="g-beamcore" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity="1"/></linearGradient>
+    <linearGradient id="g-hline" x1="0" y1="0" x2="1" y2="0"><stop offset="0" style="stop-color:var(--accent);stop-opacity:0"/><stop offset=".5" style="stop-color:var(--accent);stop-opacity:.9"/><stop offset="1" style="stop-color:var(--accent);stop-opacity:0"/></linearGradient>
+    <linearGradient id="g-glassv" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset=".2" stop-color="#fff" stop-opacity=".04"/><stop offset=".8" stop-color="#fff" stop-opacity=".03"/><stop offset="1" stop-color="#fff" stop-opacity=".16"/></linearGradient>
+    <pattern id="p-grille" width="8" height="7" patternUnits="userSpaceOnUse"><rect width="8" height="2.4" fill="#4b4e4d"/></pattern>
+    <filter id="f-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="f-blur-lg" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="f-soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+
+  <!-- Beam (hero card) -->
+  <symbol id="a-beam" viewBox="0 0 400 240">
+    <ellipse cx="200" cy="214" rx="200" ry="34" fill="url(#g-glow)" opacity=".55"/>
+    <g fill="none" style="stroke:var(--accent)" stroke-width=".9" opacity=".6">
+      <path d="M200 213 C170 150 120 122 40 112"/><path d="M200 213 C178 160 148 118 96 86"/>
+      <path d="M200 213 C188 158 176 108 156 52"/><path d="M200 213 C194 150 190 90 184 20"/>
+      <path d="M200 213 C230 150 280 122 360 112"/><path d="M200 213 C222 160 252 118 304 86"/>
+      <path d="M200 213 C212 158 224 108 244 52"/><path d="M200 213 C206 150 210 90 216 20"/>
+    </g>
+    <rect x="190" y="0" width="20" height="216" fill="url(#g-beam)" filter="url(#f-blur)"/>
+    <rect x="198.6" y="0" width="2.8" height="214" fill="url(#g-beamcore)"/>
+    <ellipse cx="200" cy="214" rx="46" ry="7" fill="#eafff2" filter="url(#f-blur)"/>
+    <rect x="0" y="214" width="400" height="1.2" fill="url(#g-hline)"/>
+  </symbol>
+
+  <!-- Silver cube -->
+  <symbol id="a-cube" viewBox="0 0 800 600">
+    <ellipse cx="400" cy="452" rx="360" ry="46" fill="url(#g-glow)" opacity=".55"/>
+    <g stroke="url(#g-ray)" stroke-width="1.3" fill="none">
+      <path d="M400 452 L0 560"/><path d="M400 452 L800 560"/><path d="M400 452 L170 600"/><path d="M400 452 L630 600"/><path d="M400 452 L400 600"/><path d="M400 452 L0 500"/><path d="M400 452 L800 500"/>
+    </g>
+    <g opacity=".12" transform="translate(0 884) scale(1 -1)">
+      <path d="M240 370 L400 430 L400 285 L240 225Z" fill="url(#g-left)"/><path d="M400 430 L560 370 L560 225 L400 285Z" fill="url(#g-right)"/>
+    </g>
+    <rect x="296" y="428" width="208" height="16" rx="3" fill="#0b0b0c"/>
+    <rect x="380" y="430" width="40" height="12" fill="url(#g-glow)" filter="url(#f-blur)"/>
+    <rect x="394" y="436" width="12" height="5" fill="#d8ffe9"/>
+    <path d="M240 225 L400 165 L560 225 L400 285Z" fill="url(#g-top)"/>
+    <path d="M240 225 L400 285 L400 430 L240 370Z" fill="url(#g-left)"/>
+    <path d="M400 285 L560 225 L560 370 L400 430Z" fill="url(#g-right)"/>
+    <path d="M400 285 L400 430" stroke="#1d1e1e" stroke-width="3"/>
+    <path d="M240 225 L400 285 L560 225" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.2"/>
+  </symbol>
+
+  <!-- Dark cube -->
+  <symbol id="a-cube-dark" viewBox="0 0 800 600">
+    <ellipse cx="400" cy="452" rx="380" ry="60" fill="url(#g-glow)" opacity=".7"/>
+    <g stroke="url(#g-ray)" stroke-width="1.3" fill="none">
+      <path d="M400 452 L0 560"/><path d="M400 452 L800 560"/><path d="M400 452 L170 600"/><path d="M400 452 L630 600"/><path d="M400 452 L400 600"/>
+    </g>
+    <rect x="300" y="420" width="200" height="40" fill="url(#g-glow)" filter="url(#f-blur-lg)"/>
+    <rect x="296" y="428" width="208" height="16" rx="3" fill="#060606"/>
+    <rect x="394" y="436" width="12" height="5" fill="#d8ffe9"/>
+    <path d="M240 225 L400 165 L560 225 L400 285Z" fill="url(#g-dtop)"/>
+    <path d="M240 225 L400 285 L400 430 L240 370Z" fill="url(#g-dleft)"/>
+    <path d="M400 285 L560 225 L560 370 L400 430Z" fill="url(#g-dright)"/>
+    <path d="M240 225 L400 285 L560 225" fill="none" stroke="#fff" stroke-opacity=".22" stroke-width="1.2"/>
+    <rect x="300" y="300" width="8" height="18" rx="2" fill="#0a0a0a" transform="skewY(20)"/>
+    <rect x="314" y="300" width="8" height="18" rx="2" fill="#0a0a0a" transform="skewY(20)"/>
+  </symbol>
+
+  <!-- Puck -->
+  <symbol id="a-puck" viewBox="0 0 800 600">
+    <ellipse cx="400" cy="410" rx="330" ry="60" fill="url(#g-glow)" opacity=".45"/>
+    <path d="M230 250 L230 392 A170 48 0 0 0 570 392 L570 250Z" fill="url(#g-cyl)"/>
+    <ellipse cx="400" cy="250" rx="170" ry="48" fill="url(#g-cyltop)"/>
+    <ellipse cx="400" cy="250" rx="128" ry="35" fill="none" stroke="#7b7f7e" stroke-width="2"/>
+    <ellipse cx="400" cy="252" rx="48" ry="14" fill="#0b0b0b"/>
+    <ellipse cx="350" cy="320" rx="16" ry="22" fill="#141414" opacity=".8"/>
+    <path d="M232 372 A170 48 0 0 0 568 372" fill="none" style="stroke:var(--accent)" stroke-width="12" filter="url(#f-blur)"/>
+    <path d="M232 372 A170 48 0 0 0 568 372" fill="none" stroke="#d6ffe7" stroke-width="2"/>
+    <path d="M230 380 L230 394 A170 48 0 0 0 570 394 L570 380 A170 48 0 0 1 230 380Z" fill="#141515"/>
+  </symbol>
+
+  <!-- Lens -->
+  <symbol id="a-lens" viewBox="0 0 800 600">
+    <g transform="rotate(-28 400 300)">
+      <ellipse cx="170" cy="300" rx="52" ry="120" fill="#3a3c3b"/>
+      <rect x="170" y="180" width="390" height="240" fill="url(#g-cylv)"/>
+      <rect x="290" y="180" width="6" height="240" fill="#1b1c1c" opacity=".7"/>
+      <rect x="380" y="180" width="3" height="240" fill="#1b1c1c" opacity=".5"/>
+      <rect x="470" y="180" width="18" height="240" fill="#232424" opacity=".85"/>
+      <ellipse cx="560" cy="300" rx="52" ry="120" fill="url(#g-cyltop)"/>
+      <ellipse cx="562" cy="300" rx="42" ry="98" fill="#1c1d1d"/>
+      <ellipse cx="564" cy="300" rx="32" ry="76" fill="url(#g-glass)"/>
+      <ellipse cx="556" cy="268" rx="6" ry="16" fill="#fff" opacity=".55"/>
+    </g>
+  </symbol>
+
+  <!-- Tower -->
+  <symbol id="a-tower" viewBox="0 0 800 600">
+    <ellipse cx="420" cy="545" rx="200" ry="22" fill="#000" opacity=".25" filter="url(#f-blur)"/>
+    <path d="M330 120 L380 96 L520 96 L470 120Z" fill="url(#g-top)"/>
+    <path d="M470 120 L520 96 L520 516 L470 540Z" fill="url(#g-right)"/>
+    <rect x="330" y="120" width="140" height="420" fill="url(#g-left)"/>
+    <rect x="342" y="138" width="116" height="200" fill="url(#p-grille)" opacity=".85"/>
+    <rect x="352" y="380" width="44" height="12" rx="6" fill="#2b2c2c"/>
+    <rect x="352" y="402" width="44" height="12" rx="6" fill="#2b2c2c"/>
+    <circle cx="440" cy="386" r="9" fill="url(#g-glow)"/>
+    <circle cx="440" cy="386" r="3" fill="#d6ffe7"/>
+  </symbol>
+
+  <!-- Dome -->
+  <symbol id="a-dome" viewBox="0 0 800 600">
+    <ellipse cx="400" cy="470" rx="300" ry="60" fill="url(#g-glow)" opacity=".35"/>
+    <path d="M180 470 L180 492 A220 42 0 0 0 620 492 L620 470Z" fill="#141515"/>
+    <ellipse cx="400" cy="470" rx="220" ry="42" fill="url(#g-dcyltop)"/>
+    <ellipse cx="400" cy="466" rx="166" ry="31" fill="none" style="stroke:var(--accent)" stroke-width="8" filter="url(#f-blur)"/>
+    <ellipse cx="400" cy="466" rx="166" ry="31" fill="none" stroke="#cfffe2" stroke-width="1.2" opacity=".8"/>
+    <rect x="386" y="250" width="28" height="216" fill="url(#g-cyl)"/>
+    <path d="M280 228 L280 258 A120 22 0 0 0 520 258 L520 228Z" fill="url(#g-dcyl)"/>
+    <ellipse cx="400" cy="228" rx="120" ry="22" fill="url(#g-dcyltop)"/>
+    <path d="M236 466 L236 196 A164 56 0 0 1 564 196 L564 466" fill="url(#g-glassv)" stroke="#fff" stroke-opacity=".35" stroke-width="1.5"/>
+    <ellipse cx="400" cy="196" rx="164" ry="56" fill="none" stroke="#fff" stroke-opacity=".18"/>
+    <g style="stroke:var(--accent)" stroke-width="1" opacity=".55">
+      <path d="M262 470 V420"/><path d="M300 480 V410"/><path d="M340 486 V430"/><path d="M460 486 V430"/><path d="M500 480 V410"/><path d="M538 470 V420"/>
+    </g>
+  </symbol>
+
+  <!-- Stack -->
+  <symbol id="a-stack" viewBox="0 0 800 600">
+    <ellipse cx="400" cy="470" rx="300" ry="50" fill="#000" opacity=".3" filter="url(#f-blur)"/>
+    <g>
+      <path d="M200 430 L200 446 A200 52 0 0 0 600 446 L600 430Z" fill="url(#g-dcyl)"/><ellipse cx="400" cy="430" rx="200" ry="52" fill="url(#g-dcyltop)"/>
+      <path d="M200 370 L200 386 A200 52 0 0 0 600 386 L600 370Z" fill="url(#g-cyl)"/><ellipse cx="400" cy="370" rx="200" ry="52" fill="url(#g-cyltop)"/>
+      <path d="M202 386 A200 52 0 0 0 598 386" fill="none" style="stroke:var(--accent)" stroke-width="8" filter="url(#f-blur)"/>
+      <path d="M202 386 A200 52 0 0 0 598 386" fill="none" stroke="#d6ffe7" stroke-width="1.4"/>
+      <path d="M200 310 L200 326 A200 52 0 0 0 600 326 L600 310Z" fill="url(#g-dcyl)"/><ellipse cx="400" cy="310" rx="200" ry="52" fill="url(#g-dcyltop)"/>
+      <path d="M200 250 L200 266 A200 52 0 0 0 600 266 L600 250Z" fill="url(#g-cyl)"/><ellipse cx="400" cy="250" rx="200" ry="52" fill="url(#g-cyltop)"/>
+      <path d="M200 190 L200 206 A200 52 0 0 0 600 206 L600 190Z" fill="url(#g-dcyl)"/><ellipse cx="400" cy="190" rx="200" ry="52" fill="url(#g-dcyltop)"/>
+      <ellipse cx="400" cy="190" rx="60" ry="16" fill="#0a0a0a"/>
+    </g>
+  </symbol>
+
+  <!-- Core (featured device) -->
+  <symbol id="a-core" viewBox="0 0 800 600">
+    <ellipse cx="440" cy="500" rx="380" ry="60" fill="#000" opacity=".35" filter="url(#f-blur-lg)"/>
+    <path d="M80 250 L500 110 L780 260 L360 400Z" fill="url(#g-top)"/>
+    <path d="M80 250 L360 400 L360 480 L80 330Z" fill="url(#g-left)"/>
+    <path d="M360 400 L780 260 L780 340 L360 480Z" fill="url(#g-right)"/>
+    <path d="M80 250 L360 400 L780 260" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="1.4"/>
+    <path d="M230 250 L500 160 L650 245 L380 335Z" fill="#2a2b2c"/>
+    <path d="M230 250 L380 335 L380 345 L230 260Z" fill="#141515"/>
+    <ellipse cx="440" cy="248" rx="96" ry="46" fill="#0d0e0e"/>
+    <ellipse cx="440" cy="248" rx="96" ry="46" fill="none" style="stroke:var(--accent)" stroke-width="10" filter="url(#f-blur)"/>
+    <ellipse cx="440" cy="248" rx="96" ry="46" fill="none" stroke="#d6ffe7" stroke-width="1.6"/>
+    <ellipse cx="440" cy="248" rx="54" ry="26" fill="url(#g-glass)"/>
+    <g fill="#5a5d5c"><circle cx="150" cy="255" r="5"/><circle cx="500" cy="135" r="5"/><circle cx="720" cy="262" r="5"/><circle cx="360" cy="378" r="5"/></g>
+    <g fill="#2b2c2c">
+      <rect x="400" y="430" width="10" height="26" rx="2" transform="skewY(-18)"/><rect x="420" y="430" width="10" height="26" rx="2" transform="skewY(-18)"/><rect x="440" y="430" width="10" height="26" rx="2" transform="skewY(-18)"/><rect x="460" y="430" width="10" height="26" rx="2" transform="skewY(-18)"/>
+    </g>
+  </symbol>
+
+  <!-- Low‑poly gem -->
+  <symbol id="a-gem" viewBox="0 0 220 220">
+    <path d="M23.4 60 L110 10 L110 62Z" fill="#7BE7AB"/>
+    <path d="M110 10 L196.6 60 L110 62Z" fill="#4FD88C"/>
+    <path d="M196.6 60 L151.6 134 L110 62Z" fill="#2EC16F"/>
+    <path d="M196.6 60 L196.6 160 L151.6 134Z" fill="#1E9A55"/>
+    <path d="M196.6 160 L110 210 L151.6 134Z" fill="#15753F"/>
+    <path d="M110 210 L68.4 134 L151.6 134Z" fill="#1E9A55"/>
+    <path d="M110 210 L23.4 160 L68.4 134Z" fill="#126637"/>
+    <path d="M23.4 160 L23.4 60 L68.4 134Z" fill="#23A85E"/>
+    <path d="M23.4 60 L110 62 L68.4 134Z" fill="#5EDC96"/>
+    <path d="M110 62 L151.6 134 L68.4 134Z" fill="#3ACB7A"/>
+  </symbol>
+
+  <!-- Icons -->
+  <symbol id="i-ar" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-al" viewBox="0 0 24 24"><path d="M20 12H4M10 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-au" viewBox="0 0 24 24"><path d="M12 20V4M6 10l6-6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-ad" viewBox="0 0 24 24"><path d="M12 4v16M6 14l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4M8 14h2M14 14h2"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-waves" viewBox="0 0 24 24"><path d="M3 8c3-2.5 6 2.5 9 0s6 2.5 9 0M3 13c3-2.5 6 2.5 9 0s6 2.5 9 0M3 18c3-2.5 6 2.5 9 0s6 2.5 9 0" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5zM3 13l9 5 9-5M3 17.5l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3zM8.5 12l2.5 2.5 4.5-4.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8M15 7h6v6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5.5h16v10H10l-4.5 3.5v-3.5H4zM8 9.5h8M8 12.5h5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+  <!-- Extra icon set (24px grid, 1.5 stroke) -->
+  <symbol id="i-persona" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="8" r="4"/><path d="M3 20.5c0-3.9 3.1-7 7-7 1.3 0 2.5.3 3.5.9"/><path d="M18 13l.9 2.1 2.1.9-2.1.9L18 19l-.9-2.1-2.1-.9 2.1-.9z"/></g></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3l1.9 5.1L18 10l-5.1 1.9L11 17l-1.9-5.1L4 10l5.1-1.9z"/><path d="M19 3v4M17 5h4M18.5 16.5v3M17 18h3"/></g></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3L10.5 13.5"/><path d="M21 3l-6.5 18-4-7.5L3 9.5z"/></g></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><circle cx="9" cy="9.5" r="1.8"/><path d="M21 15.5l-5-5L6.5 20"/></g></symbol>
+  <symbol id="i-activity" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></g></symbol>
+  <symbol id="i-pie" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4a8.5 8.5 0 1 0 9 9h-9z"/><path d="M14.5 2.8a8.5 8.5 0 0 1 6.7 6.7h-6.7z"/></g></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.4 2.6 3.7 5.6 3.7 9s-1.3 6.4-3.7 9c-2.4-2.6-3.7-5.6-3.7-9S9.6 5.6 12 3z"/></g></symbol>
+  <symbol id="i-bar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20.5h18"/><path d="M6.5 16.5v-5M11.5 16.5v-11M16.5 16.5v-8"/></g></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/></g><circle cx="12" cy="12" r="1.4" fill="currentColor"/></symbol>
+  <symbol id="i-plug" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v5M15 3v5M6 8h12v3a6 6 0 0 1-12 0zM12 17v4"/></g></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2.5L4.5 14H11l-1 7.5L18.5 10H12z"/></g></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"/><path d="M16 4.7a3.5 3.5 0 0 1 0 6.6M18.2 14c1.9.9 3.3 3 3.3 5.5"/></g></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z" fill="currentColor"/></symbol>
+  <symbol id="i-check-circle" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.7 2.7L16 9.7"/></g></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/></g></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5L12 13l8.5-6.5"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.3 7-11.5a7 7 0 0 0-14 0C5 14.7 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  <symbol id="i-help" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.3a2.6 2.6 0 0 1 5 .9c0 1.7-2.5 2.2-2.5 3.8"/></g><circle cx="12" cy="17.1" r="1" fill="currentColor"/></symbol>
+  <symbol id="i-cpu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 2.5V6M15 2.5V6M9 18v3.5M15 18v3.5M2.5 9H6M2.5 15H6M18 9h3.5M18 15h3.5"/></g></symbol>
+  <symbol id="i-workflow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><path d="M6.5 10v3.5a3 3 0 0 0 3 3H14"/></g></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></g></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7.5-4.6-9.2-9.4C1.6 7 3.9 4 7 4c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.1 0 5.4 3 4.2 6.6C19.5 15.4 12 20 12 20z"/></g></symbol>
+  <symbol id="i-euro" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 6.2A7 7 0 1 0 17.5 17.8"/><path d="M4 10h9M4 14h9"/></g></symbol>
+  <symbol id="i-calendar-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4M9 15l2 2 4-4"/></g></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></g></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-toggle" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="7" width="20" height="10" rx="5"/><circle cx="8" cy="12" r="2.4"/></g></symbol>
+  <symbol id="i-dots" viewBox="0 0 24 24"><g fill="currentColor"><circle cx="5" cy="5" r="1.6"/><circle cx="12" cy="5" r="1.6"/><circle cx="19" cy="5" r="1.6"/><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/><circle cx="5" cy="19" r="1.6"/><circle cx="12" cy="19" r="1.6"/><circle cx="19" cy="19" r="1.6"/></g></symbol>
+  <symbol id="i-quote" viewBox="0 0 48 36"><path d="M0 36V22C0 10 6 2 18 0l2 5c-6 2-9 6-9.5 12H20v19zM27 36V22c0-12 6-20 18-22l2 5c-6 2-9 6-9.5 12H47v19z" fill="currentColor"/></symbol>
+  <symbol id="i-brick" viewBox="0 0 140 100"><g fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"><path d="M10 45 L70 15 L130 45 L70 75Z"/><path d="M10 45 V70 L70 100 V75 M130 45 V70 L70 100"/><ellipse cx="52" cy="37" rx="13" ry="6.5"/><path d="M39 37v8a13 6.5 0 0 0 26 0v-8"/><ellipse cx="88" cy="37" rx="13" ry="6.5"/><path d="M75 37v8a13 6.5 0 0 0 26 0v-8"/></g></symbol>
+  <!-- Social -->
+  <symbol id="s-in" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M8 7.3v.2M12 17v-6.5M12 13.5c0-2 1.2-3 2.5-3s2.5.8 2.5 3V17"/></g></symbol>
+  <symbol id="s-x" viewBox="0 0 24 24"><path d="M4 4h4.6L20 20h-4.6zM19.5 4l-6.6 7.4M4.5 20l6.6-7.4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+  <symbol id="s-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/></symbol>
+  <symbol id="s-th" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="3.4"/><path d="M15.4 12v1.6a2.6 2.6 0 0 0 5.2 0V12a8.6 8.6 0 1 0-3.4 6.8"/></g></symbol>
+  <symbol id="s-yt" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.2 9.2v5.6l4.8-2.8z" fill="currentColor"/></symbol>
+  <symbol id="s-wa" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M3.5 20.5l1.4-4.1A8.6 8.6 0 1 1 8 19.3z"/><path d="M9 8.6c0 3.4 2.9 6.4 6.4 6.4l1-1.6-2.1-1-1 1c-1.1-.5-1.8-1.2-2.3-2.3l1-1-1-2.1z"/></g></symbol>
+  <!-- Partners -->
+  <symbol id="p-git" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="5.5" r="2.2"/><circle cx="6" cy="18.5" r="2.2"/><circle cx="18" cy="8" r="2.2"/><path d="M6 7.7v8.6M18 10.2c0 4.3-6.5 3.2-11 6.5"/></g></symbol>
+  <symbol id="p-cloud" viewBox="0 0 24 24"><path d="M7 18.5a4.2 4.2 0 0 1-.4-8.4A5.8 5.8 0 0 1 17.8 11a3.8 3.8 0 0 1-.6 7.5z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+  <symbol id="p-db" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4"><ellipse cx="12" cy="6" rx="7" ry="2.6"/><path d="M5 6v12c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6V6M5 12c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6"/></g></symbol>
+  <symbol id="p-hash" viewBox="0 0 24 24"><path d="M9.5 3L7.5 21M16.5 3l-2 18M4 8.5h17M3 15.5h17" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+  <symbol id="p-cube" viewBox="0 0 24 24"><path d="M12 2.8l8 4.6v9.2l-8 4.6-8-4.6V7.4zM4 7.4l8 4.6 8-4.6M12 12v9.2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+</svg>
+
+<!-- ======================= HEADER / MENU ======================= -->
+<div class="progress" aria-hidden="true"></div>
+
+<header class="header">
+  <a href="#home" class="logo" aria-label="FU—NE">fu—ne</a>
+  <div class="head-right">
+    <div class="lang" role="group" aria-label="Language">
+      <button data-lang="en" aria-pressed="true">EN</button><span>/</span><button data-lang="sk" aria-pressed="false">SK</button>
+    </div>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<div class="menu-backdrop" data-close-menu></div>
+<aside class="menu" id="menu" aria-hidden="true">
+  <button class="menu-close" aria-label="Close menu" data-close-menu><svg><use href="#i-close"/></svg></button>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#work">Work</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#services">Services</a>
+    <a href="#process">Process</a>
+    <a href="#analytics">Smart Analytics</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+    <a href="#team">The Team</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#labs">Fune Labs®</a>
+    <a href="#contact">Contact</a>
+    <a href="#newsletter">Sign Up</a>
+  </nav>
+  <div class="menu-legal">
+    <a href="#">Terms of Service</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">GDPR Compliance</a>
+    <a href="#">Data Protection</a>
+    <a href="#">404</a>
+  </div>
+</aside>
+
+<main>
+
+<!-- ======================= HERO + STATEMENT ======================= -->
+<div class="intro">
+  <canvas class="particles" data-particles="intro"></canvas>
+
+  <section class="hero" id="home">
+    <p class="hero-tag">You create,<br><b>we automate.</b></p>
+
+    <div class="hero-main">
+      <h1>
+        <span class="line"><span>— The smarter way</span></span>
+        <span class="line"><span>to <span class="accent">automate, create,</span></span></span>
+        <span class="line"><span>and <span class="accent">scale</span> with AI.</span></span>
+      </h1>
+
+      <div class="hero-cta reveal d2">
+        <div>
+          <h2>See our AI in action</h2>
+          <p>Book a free call and watch the live dashboard.</p>
+        </div>
+        <span class="rule"></span>
+        <a href="#contact" class="btn"><svg><use href="#i-cal"/></svg>Book a Demo</a>
+      </div>
+
+      <div class="hero-stats reveal d3">
+        <div class="stat">
+          <span class="stat-num"><span class="odo" data-value="97,8"></span><sup>%</sup></span>
+          <div class="stat-txt"><b><svg class="ico" aria-hidden="true"><use href="#i-bolt"/></svg>Automated</b><span>content &amp; fan chat</span></div>
+        </div>
+        <div class="stat">
+          <span class="stat-num"><span class="odo" data-value="+312"></span><sup>%</sup></span>
+          <div class="stat-txt"><b><svg class="ico" aria-hidden="true"><use href="#i-trend"/></svg>Revenue growth</b><span>vs. manual management</span></div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#dashboard" class="hero-card">
+      <div class="art"><img class="dash-thumb" src="assets/dashboard/desk-en.jpg?v=2" data-sk="assets/dashboard/desk-sk.jpg?v=2" alt="Fune dashboard" fetchpriority="high" decoding="async"></div>
+      <div class="cap">
+        <div><b>AI Model Roster</b><small><span class="accent">//</span> Live Dashboard</small></div>
+        <svg><use href="#i-ar"/></svg>
+      </div>
+    </a>
+  </section>
+
+  <section class="statement" aria-label="Statement">
+    <p data-words>We automate the routine and run your AI content so you can focus on growth.</p>
+    <div class="poly p1" data-speed="-0.1"><svg viewBox="0 0 220 220"><use href="#a-gem"/></svg></div>
+    <div class="poly p2" data-speed="-0.18"><svg viewBox="0 0 220 220"><use href="#a-gem"/></svg></div>
+    <div class="poly p3" data-speed="-0.05"><svg viewBox="0 0 220 220"><use href="#a-gem"/></svg></div>
+  </section>
+</div>
+
+<!-- ======================= 001 WORK ======================= -->
+<section class="section" id="work">
+  <div class="sec-head">
+    <h2 class="sec-title reveal">Our Work</h2>
+    <div class="sec-intro">
+      <div class="sec-num reveal"><span>001</span><small>fu—ne</small></div>
+      <p class="sec-lead reveal d1">AI models built with intent — automating content, fan engagement and publishing so you scale faster.</p>
+      <p class="sec-aside reveal d2">Every automation targets a real bottleneck — measurable revenue over hype.</p>
+    </div>
+  </div>
+
+  <div class="work-grid">
+    <a href="#services" class="card feat reveal" style="background:linear-gradient(160deg,#c9cccb 0%,#8e9291 55%,#5b5f5e 100%)">
+      <div class="art-cover ph"><img class="photo" src="https://images.unsplash.com/photo-1786372546514-1d524effae64?auto=format&amp;fit=crop&amp;w=1600&amp;q=75" alt="" loading="lazy" decoding="async"></div>
+      <div class="pixmask" data-pix="12x9"></div>
+      <div class="feat-top"><small><svg class="ico" aria-hidden="true"><use href="#i-sparkle"/></svg>Featured Solution</small><h3>AI Content Engine</h3></div>
+      <span class="corner-dots dots9"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+      <p class="feat-desc">Generates photos, videos and posts for every AI model in a consistent look and voice — reviewed, scheduled and published automatically.</p>
+      <span class="corner-btn sq-btn"><svg><use href="#i-ar"/></svg></span>
+    </a>
+
+    <div class="card lineup reveal d1">
+      <div class="lineup-top"><span><svg class="ico" aria-hidden="true"><use href="#i-layers"/></svg>Solution Lineup</span><span>8/8</span></div>
+      <h3>Fune Suite<br>AI-Powered<br>Creator Ops</h3>
+      <p>Everything you need to run a roster of AI models — content, fan chat, publishing and revenue in one place.</p>
+      <div class="dotfield" data-dots="35"></div>
+      <div class="lineup-foot"><svg><use href="#i-toggle"/></svg>Human-reviewed AI inside</div>
+    </div>
+
+    <a href="#services" class="card pcard reveal" style="background:linear-gradient(170deg,#d2d4d3,#9a9d9c)">
+      <div class="art-cover ph"><img class="photo" src="https://images.unsplash.com/photo-1761857352384-aaae23a714a4?auto=format&amp;fit=crop&amp;w=900&amp;q=75" alt="" loading="lazy" decoding="async"></div>
+      <div class="pixmask" data-pix="8x7"></div>
+      <h4><svg class="ico" aria-hidden="true"><use href="#i-persona"/></svg>Persona Builder</h4>
+      <p>Create unique AI models with a consistent face, style, personality and voice.</p>
+      <span class="corner-dots dots9"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+      <span class="corner-btn sq-btn"><svg><use href="#i-ar"/></svg></span>
+    </a>
+    <a href="#services" class="card pcard reveal d1" style="background:linear-gradient(170deg,#3a3c3e,#141516)">
+      <div class="art-cover ph"><img class="photo" src="https://images.unsplash.com/photo-1768885512012-0c47ad00870c?auto=format&amp;fit=crop&amp;w=900&amp;q=75" alt="" loading="lazy" decoding="async"></div>
+      <div class="pixmask" data-pix="8x7"></div>
+      <h4><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>Fan Chat AI</h4>
+      <p>Smart chat agents that talk to fans 24/7 in each model’s own voice.</p>
+      <span class="corner-dots dots9"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+      <span class="corner-btn sq-btn"><svg><use href="#i-ar"/></svg></span>
+    </a>
+    <a href="#services" class="card pcard reveal d2" style="background:linear-gradient(170deg,#c4c7c6,#6f7372)">
+      <div class="art-cover ph"><img class="photo" src="https://images.unsplash.com/photo-1760604359299-e4273ee2015a?auto=format&amp;fit=crop&amp;w=900&amp;q=75" alt="" loading="lazy" decoding="async"></div>
+      <div class="pixmask" data-pix="8x7"></div>
+      <h4><svg class="ico" aria-hidden="true"><use href="#i-send"/></svg>Auto Publishing</h4>
+      <p>Scheduled posting across platforms and time zones — without lifting a finger.</p>
+      <span class="corner-dots dots9"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+      <span class="corner-btn sq-btn"><svg><use href="#i-ar"/></svg></span>
+    </a>
+
+    <a href="#services" class="card pcard reveal" style="background:linear-gradient(170deg,#2b2d2f,#0c0d0e)">
+      <div class="art-cover ph"><img class="photo" src="https://images.unsplash.com/photo-1737071371043-761e02b1ef95?auto=format&amp;fit=crop&amp;w=900&amp;q=75" alt="" loading="lazy" decoding="async"></div>
+      <div class="pixmask" data-pix="8x7"></div>
+      <h4><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>Brand Guard</h4>
+      <p>Quality, safety and AI-disclosure checks before anything goes live.</p>
+      <span class="corner-dots dots9"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+      <span class="corner-btn sq-btn"><svg><use href="#i-ar"/></svg></span>
+    </a>
+    <div class="card placeholder reveal d1" aria-hidden="true"><svg viewBox="0 0 140 100"><use href="#i-brick"/></svg></div>
+    <div class="card beta reveal d2">
+      <h4>Fune Dashboard <span>2.0b</span></h4>
+      <p class="note">Early beta access now available.</p>
+      <span class="chip"><svg class="ico" aria-hidden="true"><use href="#i-cpu"/></svg>Development Progress</span>
+      <div class="big"><span class="odo" data-value="84,7"></span><sup>%</sup></div>
+      <div class="progress-line"><i data-progress="84.7"></i></div>
+      <div class="beta-foot"><span>Join early beta</span><a href="#newsletter" class="sq-btn sm" aria-label="Join early beta"><svg><use href="#i-ar"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= 002 DASHBOARD ======================= -->
+<section class="section" id="dashboard">
+  <div class="sec-head">
+    <h2 class="sec-title reveal">The Dashboard</h2>
+    <div class="sec-intro">
+      <div class="sec-num reveal"><span>002</span><small>fu—ne</small></div>
+      <p class="sec-lead reveal d1">Your whole AI roster in one live view — profit, fans, content and chat.</p>
+      <p class="sec-aside reveal d2">Built for agencies that run AI models every day. Works on desktop and phone.</p>
+    </div>
+  </div>
+
+  <div class="showcase reveal">
+    <div class="sc-glow" aria-hidden="true"></div>
+    <figure class="mock-browser sc-main">
+      <div class="mb-bar" aria-hidden="true"><i></i><i></i><i></i><span class="mb-url"><svg class="ico" aria-hidden="true"><use href="#i-lock"/></svg>fune · dashboard</span></div>
+      <img src="assets/dashboard/desk-en.jpg?v=2" data-sk="assets/dashboard/desk-sk.jpg?v=2" alt="Fune dashboard overview" loading="lazy" decoding="async">
+    </figure>
+    <figure class="shot-card sc-chat" data-float="-0.05"><img src="assets/dashboard/chat-en.jpg?v=2" data-sk="assets/dashboard/chat-sk.jpg?v=2" alt="Fan chat" loading="lazy" decoding="async"></figure>
+    <figure class="shot-card sc-profit" data-float="0.06"><img src="assets/dashboard/profit-en.jpg?v=2" data-sk="assets/dashboard/profit-sk.jpg?v=2" alt="Today’s net profit" loading="lazy" decoding="async"></figure>
+    <figure class="mock-phone sc-phone" data-float="-0.09"><div class="mp-screen"><span class="mp-status"><b>9:41</b><span class="mp-ic"><i></i><i></i><i></i><i class="bat"></i></span></span><img src="assets/dashboard/mobile-en.jpg?v=2" data-sk="assets/dashboard/mobile-sk.jpg?v=2" alt="Fune dashboard on a phone" loading="lazy" decoding="async"></div><span class="island"></span></figure>
+  </div>
+
+  <div class="dash-feats">
+    <article class="card df reveal">
+      <div class="df-img"><img src="assets/dashboard/profit-en.jpg?v=2" data-sk="assets/dashboard/profit-sk.jpg?v=2" alt="" loading="lazy" decoding="async" style="--w:170%"></div>
+      <div class="df-body"><h4><svg class="ico" aria-hidden="true"><use href="#i-activity"/></svg>Live profit</h4><p>Net profit, daily pace and target — updated every second.</p></div>
+    </article>
+    <article class="card df reveal d1">
+      <div class="df-img"><img src="assets/dashboard/roster-en.jpg?v=2" data-sk="assets/dashboard/roster-sk.jpg?v=2" alt="" loading="lazy" decoding="async" style="--w:160%"></div>
+      <div class="df-body"><h4><svg class="ico" aria-hidden="true"><use href="#i-persona"/></svg>AI model roster</h4><p>Every model’s status, fans and revenue at a glance.</p></div>
+    </article>
+    <article class="card df reveal d2">
+      <div class="df-img"><img src="assets/dashboard/chat-en.jpg?v=2" data-sk="assets/dashboard/chat-sk.jpg?v=2" alt="" loading="lazy" decoding="async" style="--w:105%"></div>
+      <div class="df-body"><h4><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>Fan chat</h4><p>AI replies in each persona’s voice, with response times.</p></div>
+    </article>
+    <article class="card df reveal d3">
+      <div class="df-img"><img src="assets/dashboard/queue-en.jpg?v=2" data-sk="assets/dashboard/queue-sk.jpg?v=2" alt="" loading="lazy" decoding="async" style="--w:110%"></div>
+      <div class="df-body"><h4><svg class="ico" aria-hidden="true"><use href="#i-calendar-check"/></svg>Content queue</h4><p>Planned posts across platforms, reviewed before publishing.</p></div>
+    </article>
+  </div>
+
+  <div class="sec-foot">
+    <div class="ticks" data-active="2"></div>
+    <a href="dashboard.html" target="_blank" rel="noopener" class="cta-link">Open the live demo <span class="sq-btn"><svg><use href="#i-ar"/></svg></span></a>
+  </div>
+</section>
+
+<!-- ======================= 003 SERVICES ======================= -->
+<section class="section" id="services">
+  <div class="sec-head">
+    <h2 class="sec-title reveal">Our Services</h2>
+    <div class="sec-intro">
+      <div class="sec-num reveal"><span>003</span><small>fu—ne</small></div>
+      <p class="sec-lead reveal d1">End-to-end AI services — from creating models to running them every day.</p>
+      <p class="sec-aside reveal d2">We build your AI roster, and we run it for you.</p>
+    </div>
+  </div>
+
+  <div class="services">
+    <div class="svc-cols reveal">
+      <article class="svc open" tabindex="0">
+        <div class="svc-num"><svg><use href="#i-ad"/></svg><span>01</span></div>
+        <div class="svc-body">
+          <h4>AI Model Creation</h4>
+          <p>We design unique virtual personas — look, personality, voice and story — ready for every platform.</p>
+          <div class="art ph" style="background:linear-gradient(170deg,#d4d6d5,#8b8f8e)"><img class="photo" src="https://images.unsplash.com/photo-1771503735122-22405ba958f9?auto=format&amp;fit=crop&amp;w=800&amp;q=75" alt="" loading="lazy" decoding="async"></div>
+        </div>
+        <div class="svc-foot"><svg><use href="#i-persona"/></svg><span>models</span></div>
+      </article>
+      <article class="svc" tabindex="0">
+        <div class="svc-num"><svg><use href="#i-ad"/></svg><span>02</span></div>
+        <div class="svc-body">
+          <h4>Fan Chat Automation</h4>
+          <p>AI chat agents trained on each persona talk to fans 24/7, keep every conversation personal and grow loyalty.</p>
+          <div class="art ph" style="background:linear-gradient(170deg,#d2d4d3,#9a9d9c)"><img class="photo" src="https://images.unsplash.com/photo-1423784346385-c1d4dac9893a?auto=format&amp;fit=crop&amp;w=800&amp;q=75" alt="" loading="lazy" decoding="async"></div>
+        </div>
+        <div class="svc-foot"><svg><use href="#i-chat"/></svg><span>chat</span></div>
+      </article>
+      <article class="svc" tabindex="0">
+        <div class="svc-num"><svg><use href="#i-ad"/></svg><span>03</span></div>
+        <div class="svc-body">
+          <h4>Content Management</h4>
+          <p>Planning, generation, approval and publishing of photos, videos and posts across every channel — in one managed workflow.</p>
+          <div class="art ph" style="background:linear-gradient(170deg,#2b2d2f,#0c0d0e)"><img class="photo" src="https://images.unsplash.com/photo-1771444700441-6e8bc12f16d6?auto=format&amp;fit=crop&amp;w=800&amp;q=75" alt="" loading="lazy" decoding="async"></div>
+        </div>
+        <div class="svc-foot"><svg><use href="#i-image"/></svg><span>content</span></div>
+      </article>
+      <article class="svc" tabindex="0">
+        <div class="svc-num"><svg><use href="#i-ad"/></svg><span>04</span></div>
+        <div class="svc-body">
+          <h4>Analytics &amp; Growth</h4>
+          <p>Live revenue, fan and engagement tracking for every model — we double down on what earns.</p>
+          <div class="art ph" style="background:linear-gradient(170deg,#3a3c3e,#141516)"><img class="photo" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=800&amp;q=75" alt="" loading="lazy" decoding="async"></div>
+        </div>
+        <div class="svc-foot"><svg><use href="#i-trend"/></svg><span>growth</span></div>
+      </article>
+    </div>
+
+    <div class="card core reveal d1">
+      <div class="core-top"><span>Core Services</span><span class="ln"></span><span>4/4</span></div>
+      <h3>Modular AI services for automating and managing content</h3>
+      <p>We build AI systems that adapt to your niche, your audience and your goals. Our key capabilities include:</p>
+      <ul class="caps">
+        <li><svg class="ico" aria-hidden="true"><use href="#i-persona"/></svg>AI personas</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-image"/></svg>Content generation</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>24/7 fan chat</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-activity"/></svg>Live analytics</li>
+      </ul>
+      <div class="dotfield" data-dots="25"></div>
+      <div class="core-foot"><svg><use href="#i-dots"/></svg>Create, automate, manage, and scale.</div>
+    </div>
+  </div>
+
+  <div class="sec-foot">
+    <div class="ticks" data-active="3"></div>
+    <a href="#process" class="cta-link">Explore Services in Depth <span class="sq-btn"><svg><use href="#i-ar"/></svg></span></a>
+  </div>
+</section>
+
+<!-- ======================= 004 PROCESS ======================= -->
+<section class="section" id="process">
+  <div class="sec-head">
+    <h2 class="sec-title reveal">Our Process</h2>
+    <div class="sec-intro">
+      <div class="sec-num reveal"><span>004</span><small>fu—ne</small></div>
+      <p class="sec-lead reveal d1">From the first call to a live AI roster in weeks, not months.</p>
+      <p class="sec-aside reveal d2">A clear, transparent process — from strategy to daily management.</p>
+    </div>
+  </div>
+
+  <div class="process reveal" data-process>
+    <div class="card proc-img" style="background:radial-gradient(80% 60% at 50% 70%,#1c1d1e,#030303)">
+      <div class="art-cover ph"><img class="photo" src="https://images.unsplash.com/photo-1742924937109-1eb087fcb8c2?auto=format&amp;fit=crop&amp;w=1000&amp;q=75" alt="" loading="lazy" decoding="async"></div>
+      <div class="pixmask" data-pix="7x10"></div>
+    </div>
+    <div class="card proc-head">
+      <h4><svg class="ico" aria-hidden="true"><use href="#i-workflow"/></svg>Fune Process</h4>
+      <div class="pager" data-pager></div>
+    </div>
+    <div class="card proc-nav">
+      <button class="arrow-btn" data-prev aria-label="Previous step"><svg><use href="#i-al"/></svg></button>
+      <button class="arrow-btn" data-next aria-label="Next step"><svg><use href="#i-ar"/></svg></button>
+    </div>
+    <div class="card proc-step" data-dyn>
+      <div class="proc-swap">
+        <span class="tile" aria-hidden="true"><svg><use href="#i-target" data-icon/></svg></span>
+        <h3 data-title>Step 1 — Strategy &amp; Audit</h3>
+        <p data-text>We analyse your niche, audience and goals and design the right roster of AI models and channels.</p>
+      </div>
+      <div class="proc-metric proc-swap">
+        <div class="big"><span data-num>48</span><sup data-unit>h</sup></div>
+        <small data-label>Strategy delivery time</small>
+      </div>
+    </div>
+    <div class="card proc-demo">
+      <a href="#contact" class="btn"><svg><use href="#i-cal"/></svg>Book a Demo</a>
+      <p>Book a demo to see this process in action.</p>
+    </div>
+  </div>
+
+  <div class="sec-foot">
+    <div class="ticks" data-active="4"></div>
+    <a href="#faq" class="cta-link">Questions about our process? We’re here to help. <span class="sq-btn"><svg><use href="#i-ar"/></svg></span></a>
+  </div>
+</section>
+
+<!-- ======================= 005 ANALYTICS ======================= -->
+<section class="section" id="analytics">
+  <div class="sec-head">
+    <h2 class="sec-title reveal">Smart Analytics</h2>
+    <div class="sec-intro">
+      <div class="sec-num reveal"><span>005</span><small>fu—ne</small></div>
+      <p class="sec-lead reveal d1">Track every model, every fan and every euro in real time.</p>
+      <p class="sec-aside reveal d2">A live dashboard that shows the ROI of your AI roster — no guesswork.</p>
+    </div>
+  </div>
+
+  <div class="analytics">
+    <div class="card an-img reveal" style="background:radial-gradient(70% 60% at 50% 75%,#202122,#050505)">
+      <div class="art-cover ph"><img class="photo" src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&amp;fit=crop&amp;w=1100&amp;q=75" alt="" loading="lazy" decoding="async"></div>
+      <div class="pixmask" data-pix="10x9"></div>
+      <h4><span class="accent">AI</span> Powered Analytics</h4>
+      <span class="logo">fu—ne</span>
+    </div>
+
+    <div class="card an-health reveal d1">
+      <h4><svg class="ico" aria-hidden="true"><use href="#i-pie"/></svg>Model Status</h4>
+      <small>Live activity across the roster</small>
+      <svg class="donut" viewBox="0 0 200 200" data-donut>
+        <circle cx="100" cy="100" r="66" stroke="#2C2C2F"/>
+        <circle cx="100" cy="100" r="66" style="stroke:var(--accent)" data-seg="50" data-off="0"/>
+        <circle cx="100" cy="100" r="66" stroke="#5F5F66" data-seg="33" data-off="50"/>
+        <circle cx="100" cy="100" r="66" stroke="#E1E4DE" data-seg="17" data-off="83"/>
+      </svg>
+      <div class="legend">
+        <div><b>50%</b><small>Generating</small><i style="background:var(--accent)"></i></div>
+        <div><b>33%</b><small>Chatting</small><i style="background:#5F5F66"></i></div>
+        <div><b>17%</b><small>Idle</small><i style="background:#E1E4DE"></i></div>
+      </div>
+    </div>
+
+    <div class="card an-status reveal d2">
+      <div class="clocks">
+        <div class="clock" data-tz="Europe/Bratislava">
+          <b>Bratislava</b><small data-utc>UTC +1</small>
+          <svg viewBox="0 0 100 100"><circle class="face" cx="50" cy="50" r="48"/><line class="h" x1="50" y1="50" x2="50" y2="28"/><line class="m" x1="50" y1="50" x2="50" y2="14"/><line class="s" x1="50" y1="56" x2="50" y2="10"/><circle cx="50" cy="50" r="2" fill="#E1E4DE"/></svg>
+          <div class="lv"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+          <div class="st">Generating</div><div class="sub">42 assets today</div>
+        </div>
+        <div class="clock" data-tz="America/New_York">
+          <b>New York</b><small data-utc>UTC -5</small>
+          <svg viewBox="0 0 100 100"><circle class="face" cx="50" cy="50" r="48"/><line class="h" x1="50" y1="50" x2="50" y2="28"/><line class="m" x1="50" y1="50" x2="50" y2="14"/><line class="s" x1="50" y1="56" x2="50" y2="10"/><circle cx="50" cy="50" r="2" fill="#E1E4DE"/></svg>
+          <div class="lv"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+          <div class="st">Chatting</div><div class="sub">1,284 messages</div>
+        </div>
+        <div class="clock" data-tz="Asia/Dubai">
+          <b>Dubai</b><small data-utc>UTC +4</small>
+          <svg viewBox="0 0 100 100"><circle class="face" cx="50" cy="50" r="48"/><line class="h" x1="50" y1="50" x2="50" y2="28"/><line class="m" x1="50" y1="50" x2="50" y2="14"/><line class="s" x1="50" y1="56" x2="50" y2="10"/><circle cx="50" cy="50" r="2" fill="#E1E4DE"/></svg>
+          <div class="lv"><i></i><i></i><i></i><i></i></div>
+          <div class="st dim">Idle</div><div class="sub">Next post 09:00</div>
+        </div>
+      </div>
+      <span class="pill">Posting Schedule Sync</span>
+      <h4><svg class="ico" aria-hidden="true"><use href="#i-globe"/></svg>Global Posting Status</h4>
+    </div>
+
+    <div class="card an-uptime reveal">
+      <div class="ubars" data-ubars></div>
+      <small><svg class="ico" aria-hidden="true"><use href="#i-calendar-check"/></svg>Last 30 days</small>
+      <div class="big"><span class="odo" data-value="5&nbsp;540"></span><sup>€</sup></div>
+      <div class="lbl">Today’s net profit</div>
+    </div>
+
+    <div class="card an-perf reveal d1">
+      <h4><svg class="ico" aria-hidden="true"><use href="#i-activity"/></svg>Profit Through the Day</h4>
+      <small>Daily target €20,000</small>
+      <div class="linechart" data-line>
+        <svg viewBox="0 0 260 210">
+          <g class="grid">
+            <line x1="34" y1="55" x2="250" y2="55"/><line x1="34" y1="100" x2="250" y2="100"/><line x1="34" y1="145" x2="250" y2="145"/><line x1="34" y1="190" x2="250" y2="190"/>
+            <line x1="88" y1="10" x2="88" y2="190"/><line x1="142" y1="10" x2="142" y2="190"/><line x1="196" y1="10" x2="196" y2="190"/><line x1="250" y1="10" x2="250" y2="190"/>
+          </g>
+          <line x1="34" y1="10" x2="250" y2="10" stroke="#E0A43A" stroke-width="1" stroke-dasharray="4 3"/>
+          <text x="10" y="13" style="fill:#E0A43A">20k</text><text x="10" y="58">15k</text><text x="10" y="103">10k</text><text x="16" y="148">5k</text><text x="22" y="193">0</text>
+          <text x="77" y="206">06:00</text><text x="131" y="206">12:00</text><text x="185" y="206">18:00</text><text x="236" y="206">24:00</text>
+          <polyline class="lb" points="34,190 52,186 70,180 88,170 106,160 124,142 142,123"/>
+          <polyline class="la" points="34,190 52,188 70,184 88,178 106,170 124,156 142,140"/>
+          <circle cx="142" cy="140" r="3.5" style="fill:var(--accent)"/>
+        </svg>
+        <div class="tip" data-tip data-dyn><span>00:00 · €0</span><i></i></div>
+      </div>
+      <div class="legend">
+        <div><b>€5,540</b><small>Net profit</small><i style="background:var(--accent)"></i></div>
+        <div><b>€7,487</b><small>Gross</small><i style="background:#E1E4DE"></i></div>
+      </div>
+    </div>
+
+    <div class="card an-evo reveal d2">
+      <div class="evo-head">
+        <div><h4><svg class="ico" aria-hidden="true"><use href="#i-bar"/></svg>Top Models Today</h4><small>Net profit per AI model</small></div>
+        <div class="score"><small>Active models</small><b><em>6</em>/8</b></div>
+      </div>
+      <div class="evo-bars" data-evo>
+        <div class="evo-bar"><div class="track"><div class="fill" data-h="92"><b>€1,262</b></div></div><small>Mia Nova</small></div>
+        <div class="evo-bar"><div class="track"><div class="fill" data-h="78"><b>€1,072</b></div></div><small>Nyx Ray</small></div>
+        <div class="evo-bar"><div class="track"><div class="fill" data-h="65"><b>€891</b></div></div><small>Kira Byte</small></div>
+        <div class="evo-bar"><div class="track"><div class="fill" data-h="61"><b>€843</b></div></div><small>Luna Vex</small></div>
+        <div class="evo-bar"><div class="track"><div class="fill" data-h="43"><b>€590</b></div></div><small>Aria Sol</small></div>
+      </div>
+    </div>
+
+    <div class="an-side reveal d3">
+      <div class="card">
+        <small><svg class="ico" aria-hidden="true"><use href="#i-target"/></svg>Daily Target</small>
+        <div class="battery" data-battery><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="val">27%</div><small>of €20,000</small>
+      </div>
+      <div class="card">
+        <small><svg class="ico" aria-hidden="true"><use href="#i-plug"/></svg>Connected Platforms</small>
+        <div class="partner" data-partner>
+          <svg class="on"><use href="#p-git"/></svg><svg><use href="#p-cloud"/></svg><svg><use href="#p-db"/></svg><svg><use href="#p-hash"/></svg><svg><use href="#p-cube"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="card an-news reveal">
+      <span class="label"><svg class="ico" aria-hidden="true"><use href="#i-sparkle"/></svg>News &amp; Achievements</span>
+      <div class="ticker"><div class="ticker-track" data-ticker>
+        <span><svg class="ico" aria-hidden="true"><use href="#i-sparkle"/></svg>8 AI Models Live</span><span><svg class="ico" aria-hidden="true"><use href="#i-sparkle"/></svg>65K+ Fans Reached</span><span><svg class="ico" aria-hidden="true"><use href="#i-sparkle"/></svg>1.2M+ Messages Answered</span><span><svg class="ico" aria-hidden="true"><use href="#i-sparkle"/></svg>40K+ Assets Generated</span><span><svg class="ico" aria-hidden="true"><use href="#i-sparkle"/></svg>24/7 Fan Engagement</span><span><svg class="ico" aria-hidden="true"><use href="#i-sparkle"/></svg>€18K Daily Revenue Pace</span><span><svg class="ico" aria-hidden="true"><use href="#i-sparkle"/></svg>3× Faster Content Production</span><span><svg class="ico" aria-hidden="true"><use href="#i-sparkle"/></svg>62% Lower Content Costs</span><span><svg class="ico" aria-hidden="true"><use href="#i-sparkle"/></svg>4.9/5 Client Rating</span><span><svg class="ico" aria-hidden="true"><use href="#i-sparkle"/></svg>15 Languages Supported</span>
+      </div></div>
+    </div>
+  </div>
+
+  <div class="sec-foot">
+    <div class="ticks" data-active="5"></div>
+    <a href="#pricing" class="cta-link">Explore more statistics <span class="sq-btn"><svg><use href="#i-ar"/></svg></span></a>
+  </div>
+</section>
+
+<!-- ======================= 006 PRICING ======================= -->
+<section class="section" id="pricing">
+  <div class="sec-head">
+    <h2 class="sec-title reveal">Pricing</h2>
+    <div class="sec-intro">
+      <div class="sec-num reveal"><span>006</span><small>fu—ne</small></div>
+      <p class="sec-lead reveal d1">Flexible, transparent plans.<br>Built for clarity and growth.</p>
+      <p class="sec-aside reveal d2">Scale at your own pace — choose only what you need, when you need it. Nothing extra, nothing locked in.</p>
+    </div>
+  </div>
+
+  <div class="pricing">
+    <div class="plan reveal" data-plan data-monthly="490" data-yearly="410">
+      <div class="card plan-img" style="background:radial-gradient(80% 60% at 50% 72%,#1b1c1d,#030303)">
+        <div class="art-cover ph"><img class="photo" src="https://images.unsplash.com/photo-1742924937117-c6fe4a57e6e7?auto=format&amp;fit=crop&amp;w=700&amp;q=75" alt="" loading="lazy" decoding="async"></div>
+        <div class="pixmask" data-pix="6x8"></div>
+        <h4>Studio</h4><small>For your first AI model</small>
+      </div>
+      <div class="card plan-price">
+        <small><svg class="ico" aria-hidden="true"><use href="#i-euro"/></svg>Price / month</small>
+        <div class="amount">€<span class="num" data-price>490</span></div>
+        <div class="toggle-row"><span>Monthly</span><button class="toggle" aria-pressed="false" aria-label="Toggle yearly billing"></button><span>Yearly</span></div>
+        <div class="save">You save 16%</div>
+      </div>
+      <div class="plan-meta">
+        <div class="card"><small><svg class="ico" aria-hidden="true"><use href="#i-layers"/></svg>Plan</small><b>Starter</b></div>
+        <div class="card"><small><svg class="ico" aria-hidden="true"><use href="#i-persona"/></svg>AI models</small><b>1</b></div>
+      </div>
+      <div class="card plan-feat"><ul><li>1 AI model persona</li><li>60 photos &amp; videos / month</li><li>AI fan chat</li><li>2 platforms</li><li>Scheduled posting</li><li>Live dashboard</li><li>Email support</li></ul></div>
+      <div class="card plan-cta"><a href="#contact" class="btn"><svg><use href="#i-check"/></svg>Select Plan</a></div>
+    </div>
+
+    <div class="plan reveal" data-plan data-monthly="1290" data-yearly="1080">
+      <div class="card plan-img" style="background:radial-gradient(80% 60% at 50% 72%,#1b1c1d,#030303)">
+        <div class="art-cover ph"><img class="photo" src="https://images.unsplash.com/photo-1758393517077-a2d963888cfb?auto=format&amp;fit=crop&amp;w=700&amp;q=75" alt="" loading="lazy" decoding="async"></div>
+        <div class="pixmask" data-pix="6x8"></div>
+        <h4>Scale</h4><small>For growing agencies</small>
+      </div>
+      <div class="card plan-price">
+        <small><svg class="ico" aria-hidden="true"><use href="#i-euro"/></svg>Price / month</small>
+        <div class="amount">€<span class="num" data-price>1290</span></div>
+        <div class="toggle-row"><span>Monthly</span><button class="toggle" aria-pressed="false" aria-label="Toggle yearly billing"></button><span>Yearly</span></div>
+        <div class="save">You save 16%</div>
+      </div>
+      <div class="plan-meta">
+        <div class="card"><small><svg class="ico" aria-hidden="true"><use href="#i-layers"/></svg>Plan</small><b>Growth</b></div>
+        <div class="card"><small><svg class="ico" aria-hidden="true"><use href="#i-persona"/></svg>AI models</small><b>4</b></div>
+      </div>
+      <div class="card plan-feat"><ul><li class="hl">All Studio features</li><li>Up to 4 AI models</li><li>250 photos &amp; videos / month</li><li>24/7 AI fan chat</li><li>Unlimited platforms</li><li>Revenue analytics</li><li>Weekly optimization</li><li>Priority support</li></ul></div>
+      <div class="card plan-cta"><a href="#contact" class="btn"><svg><use href="#i-check"/></svg>Select Plan</a></div>
+    </div>
+
+    <div class="plan reveal" data-plan data-monthly="2990" data-yearly="2510">
+      <div class="card plan-img" style="background:radial-gradient(80% 60% at 50% 72%,#1b1c1d,#030303)">
+        <div class="art-cover ph"><img class="photo" src="https://images.unsplash.com/photo-1782170932323-8f03eb41cc96?auto=format&amp;fit=crop&amp;w=700&amp;q=75" alt="" loading="lazy" decoding="async"></div>
+        <div class="pixmask" data-pix="6x8"></div>
+        <h4>Supreme</h4><small>For large rosters</small>
+      </div>
+      <div class="card plan-price">
+        <small><svg class="ico" aria-hidden="true"><use href="#i-euro"/></svg>Price / month</small>
+        <div class="amount">€<span class="num" data-price>2990</span></div>
+        <div class="toggle-row"><span>Monthly</span><button class="toggle" aria-pressed="false" aria-label="Toggle yearly billing"></button><span>Yearly</span></div>
+        <div class="save">You save 16%</div>
+      </div>
+      <div class="plan-meta">
+        <div class="card"><small><svg class="ico" aria-hidden="true"><use href="#i-layers"/></svg>Plan</small><b>Enterprise</b></div>
+        <div class="card"><small><svg class="ico" aria-hidden="true"><use href="#i-persona"/></svg>AI models</small><b>Unlimited</b></div>
+      </div>
+      <div class="card plan-feat"><ul><li class="hl">All Scale features</li><li>Unlimited AI models</li><li>Custom persona development</li><li>Full content management</li><li>Dedicated account manager</li><li>Custom integrations</li><li>Team training</li><li>SLA &amp; GDPR compliance</li></ul></div>
+      <div class="card plan-cta"><a href="#contact" class="btn"><svg><use href="#i-check"/></svg>Select Plan</a></div>
+    </div>
+  </div>
+
+  <div class="sec-foot">
+    <div class="ticks" data-active="6"></div>
+    <a href="#contact" class="cta-link">Need a custom plan? Let’s talk <span class="sq-btn"><svg><use href="#i-ar"/></svg></span></a>
+  </div>
+</section>
+
+<!-- ======================= 007 FAQ ======================= -->
+<section class="section" id="faq">
+  <div class="sec-head">
+    <h2 class="sec-title reveal">Questions &amp; Answers</h2>
+    <div class="sec-intro">
+      <div class="sec-num reveal"><span>007</span><small>fu—ne</small></div>
+      <p class="sec-lead reveal d1">Simple answers to help you get started and move faster.</p>
+      <p class="sec-aside reveal d2">Spend less time guessing and more time building.</p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <div class="faq-list reveal" data-faq>
+      <div class="qa"><button aria-expanded="false">What exactly does Fune do?<span class="ic"><i></i><i></i></span></button><div class="ans"><div><p>Fune is an AI agency. We create and run AI models — virtual personas — and automate everything around them: content generation, fan chat, publishing and revenue tracking.</p></div></div></div>
+      <div class="qa"><button aria-expanded="false">What is an AI model?<span class="ic"><i></i><i></i></span></button><div class="ans"><div><p>A virtual persona with its own look, personality and voice. Because it’s generated by AI, it can create content and talk to fans around the clock — consistently and at scale.</p></div></div></div>
+      <div class="qa"><button aria-expanded="false">How does content management work?<span class="ic"><i></i><i></i></span></button><div class="ans"><div><p>We plan a content calendar for every model, AI generates the photos, videos and captions, our team reviews them and the system publishes everything on schedule.</p></div></div></div>
+      <div class="qa"><button aria-expanded="false">How does the AI fan chat work?<span class="ic"><i></i><i></i></span></button><div class="ans"><div><p>Each model has a chat agent trained on its personality. It replies instantly, remembers context and hands sensitive conversations over to a human operator.</p></div></div></div>
+      <div class="qa"><button aria-expanded="false">Can I see the results in real time?<span class="ic"><i></i><i></i></span></button><div class="ans"><div><p>Yes. The live dashboard shows net profit, daily pace, fans and the status of every model — generating, chatting, posting or idle.</p></div></div></div>
+      <div class="qa"><button aria-expanded="false">How long does it take to launch?<span class="ic"><i></i><i></i></span></button><div class="ans"><div><p>Strategy takes about 48 hours, a new model is ready in roughly a week and the full automation goes live within two to three weeks.</p></div></div></div>
+      <div class="qa"><button aria-expanded="false">Is it safe and compliant?<span class="ic"><i></i><i></i></span></button><div class="ans"><div><p>Yes. We follow GDPR and platform rules, clearly label AI-generated personas and content, and never use your data to train public AI models.</p></div></div></div>
+      <div class="qa"><button aria-expanded="false">How does pricing work?<span class="ic"><i></i><i></i></span></button><div class="ans"><div><p>You choose a monthly plan based on the number of AI models and the volume of content. Yearly billing saves 16%, and you can change or cancel your plan at any time.</p></div></div></div>
+    </div>
+
+    <div class="faq-side reveal d1">
+      <div class="card faq-img" style="background:linear-gradient(160deg,#3a3c3e,#0e0f10)">
+        <div class="art-cover ph"><img class="photo" src="https://images.unsplash.com/photo-1758520145140-c2dd8e78fc02?auto=format&amp;fit=crop&amp;w=1300&amp;q=75" alt="" loading="lazy" decoding="async"></div>
+        <div class="pixmask" data-pix="10x5"></div>
+        <div class="badge">
+          <svg class="ring" viewBox="0 0 120 120"><defs><path id="ring1" d="M60 60 m-46 0 a46 46 0 1 1 92 0 a46 46 0 1 1 -92 0"/></defs><text><textPath href="#ring1">we automate the work · you lead the growth ·</textPath></text></svg>
+          <span class="core-dot"></span>
+        </div>
+      </div>
+      <div class="card faq-ask">
+        <span class="tile" aria-hidden="true"><svg><use href="#i-help"/></svg></span>
+        <h3>You still have questions?</h3>
+        <p>Every project is different. Let us show you what an AI roster can do for you — book a free consultation and we’ll find the right setup together.</p>
+        <a href="#contact" class="cta-link">Let’s have a chat <span class="sq-btn sm"><svg><use href="#i-ar"/></svg></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= 008 TEAM ======================= -->
+<section class="section" id="team">
+  <div class="sec-head">
+    <h2 class="sec-title reveal">Meet the Team</h2>
+    <div class="sec-intro">
+      <div class="sec-num reveal"><span>008</span><small>fu—ne</small></div>
+      <p class="sec-lead reveal d1">Get to know the people behind the work. Makers, thinkers, and problem-solvers.</p>
+      <p class="sec-aside reveal d2">AI artists, automation engineers and content strategists — working as one team.</p>
+    </div>
+  </div>
+
+  <div class="team reveal" data-team>
+    <div class="card team-head"><h4><svg class="ico" aria-hidden="true"><use href="#i-users"/></svg>Team Fune</h4><div class="pager" data-pager></div></div>
+    <div class="card team-photo"><img alt="" data-photo loading="lazy"></div>
+    <div class="card team-nav">
+      <button class="arrow-btn" data-prev aria-label="Previous member"><svg><use href="#i-al"/></svg></button>
+      <button class="arrow-btn" data-next aria-label="Next member"><svg><use href="#i-ar"/></svg></button>
+    </div>
+    <div class="card team-bio" data-dyn>
+      <div class="proc-swap" data-swap><h3 data-name></h3><small data-role></small></div>
+      <p class="proc-swap" data-bio></p>
+    </div>
+    <div class="card team-social">
+      <a href="#" aria-label="LinkedIn"><svg><use href="#s-in"/></svg></a>
+      <a href="#" aria-label="X"><svg><use href="#s-x"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg><use href="#s-ig"/></svg></a>
+      <a href="#" aria-label="WhatsApp"><svg><use href="#s-wa"/></svg></a>
+    </div>
+  </div>
+
+  <div class="sec-foot">
+    <div class="ticks" data-active="8"></div>
+    <a href="#newsletter" class="cta-link">Join our AI newsletter <span class="sq-btn"><svg><use href="#i-ar"/></svg></span></a>
+  </div>
+</section>
+
+<!-- ======================= 009 TESTIMONIALS ======================= -->
+<section class="section" id="testimonials">
+  <div class="sec-head">
+    <h2 class="sec-title reveal">What Our Clients Say</h2>
+    <div class="sec-intro">
+      <div class="sec-num reveal"><span>009</span><small>fu—ne</small></div>
+      <p class="sec-lead reveal d1">Trusted by creators, agencies, and brands that want more done with less effort.</p>
+      <p class="sec-aside reveal d2">Real stories from clients who work with Fune every day — why they chose us, and what changed.</p>
+    </div>
+  </div>
+
+  <div class="testi reveal" data-testi>
+    <div class="card testi-main">
+      <div class="ph"><img alt="" data-photo></div>
+      <div class="testi-body" data-dyn>
+        <div class="testi-top"><svg class="q" viewBox="0 0 48 36" aria-hidden="true"><use href="#i-quote"/></svg><div class="stars" role="img" aria-label="5/5"><svg class="star" aria-hidden="true"><use href="#i-star"/></svg><svg class="star" aria-hidden="true"><use href="#i-star"/></svg><svg class="star" aria-hidden="true"><use href="#i-star"/></svg><svg class="star" aria-hidden="true"><use href="#i-star"/></svg><svg class="star" aria-hidden="true"><use href="#i-star"/></svg></div></div>
+        <blockquote data-quote></blockquote>
+        <div class="testi-who"><div><h4 data-name></h4><small data-role></small></div><span class="co"><svg class="ico" aria-hidden="true"><use href="#i-check-circle"/></svg><span data-co></span></span></div>
+      </div>
+    </div>
+    <div class="card testi-nav">
+      <div>
+        <button class="arrow-btn" data-prev aria-label="Previous review"><svg><use href="#i-al"/></svg></button>
+        <button class="arrow-btn" data-next aria-label="Next review"><svg><use href="#i-ar"/></svg></button>
+      </div>
+    </div>
+    <div class="card testi-bar"><span><svg class="ico" aria-hidden="true"><use href="#i-star"/></svg>Reviews</span><div class="pager" data-pager></div></div>
+    <div class="thumbs" data-thumbs>
+      <a href="#testimonials" class="card up" aria-label="Back to top of reviews"><svg><use href="#i-au"/></svg></a>
+    </div>
+  </div>
+
+  <div class="sec-foot">
+    <div class="ticks" data-active="9"></div>
+    <a href="#labs" class="cta-link">Read more success stories <span class="sq-btn"><svg><use href="#i-ar"/></svg></span></a>
+  </div>
+</section>
+
+<!-- ======================= 010 LABS ======================= -->
+<section class="section" id="labs">
+  <div class="sec-head">
+    <h2 class="sec-title reveal">Fune Labs®</h2>
+    <div class="sec-intro">
+      <div class="sec-num reveal"><span>010</span><small>fu—ne</small></div>
+      <p class="sec-lead reveal d1">Fresh takes on AI models, content automation, and the tools behind the creator economy.</p>
+      <p class="sec-aside reveal d2">Practical guides on building and running AI content that earns.</p>
+    </div>
+  </div>
+
+  <div class="blog">
+    <a href="#labs" class="card post reveal" style="background:linear-gradient(170deg,#d6d8d7,#8f9392)">
+      <div class="art-cover ph"><img class="photo" src="https://images.unsplash.com/photo-1770233621425-5d9ee7a0a700?auto=format&amp;fit=crop&amp;w=1400&amp;q=75" alt="" loading="lazy" decoding="async"></div>
+      <div class="pixmask" data-pix="10x9"></div>
+      <div class="post-top"><span><svg class="ico" aria-hidden="true"><use href="#i-pen"/></svg>Written by Martin Holt</span><span><svg class="ico" aria-hidden="true"><use href="#i-cal"/></svg>Monday, October 12, 2026</span></div>
+      <h3>How to Build an AI Persona That Fans Love</h3>
+      <p>Look, personality and voice — the three pillars of a lasting AI character.</p>
+      <span class="corner-btn sq-btn sm"><svg><use href="#i-ar"/></svg></span>
+    </a>
+    <a href="#labs" class="card post reveal d1" style="background:linear-gradient(170deg,#c8cbca,#6e7271)">
+      <div class="art-cover ph"><img class="photo" src="https://images.unsplash.com/photo-1706606999710-72658165a73d?auto=format&amp;fit=crop&amp;w=1400&amp;q=75" alt="" loading="lazy" decoding="async"></div>
+      <div class="pixmask" data-pix="10x9"></div>
+      <div class="post-top"><span><svg class="ico" aria-hidden="true"><use href="#i-pen"/></svg>Written by Lea Hartwig</span><span><svg class="ico" aria-hidden="true"><use href="#i-cal"/></svg>Wednesday, September 23, 2026</span></div>
+      <h3>AI Content That Still Feels Human</h3>
+      <p>Why consistency and human review make all the difference.</p>
+      <span class="corner-btn sq-btn sm"><svg><use href="#i-ar"/></svg></span>
+    </a>
+    <a href="#labs" class="card post reveal" style="background:linear-gradient(170deg,#3c3e40,#0f1011)">
+      <div class="art-cover ph"><img class="photo" src="https://images.unsplash.com/photo-1592890288564-76628a30a657?auto=format&amp;fit=crop&amp;w=1400&amp;q=75" alt="" loading="lazy" decoding="async"></div>
+      <div class="pixmask" data-pix="10x9"></div>
+      <div class="post-top"><span><svg class="ico" aria-hidden="true"><use href="#i-pen"/></svg>Written by Rafael Nunes</span><span><svg class="ico" aria-hidden="true"><use href="#i-cal"/></svg>Friday, August 28, 2026</span></div>
+      <h3>Automating Fan Chat Without Losing the Personal Touch</h3>
+      <p>What makes an AI conversation feel genuine.</p>
+      <span class="corner-btn sq-btn sm"><svg><use href="#i-ar"/></svg></span>
+    </a>
+    <a href="#labs" class="card post reveal d1" style="background:linear-gradient(170deg,#cfd1d0,#7d8180)">
+      <div class="art-cover ph"><img class="photo" src="https://images.unsplash.com/photo-1784729553968-07da5d7b7c99?auto=format&amp;fit=crop&amp;w=1400&amp;q=75" alt="" loading="lazy" decoding="async"></div>
+      <div class="pixmask" data-pix="10x9"></div>
+      <div class="post-top"><span><svg class="ico" aria-hidden="true"><use href="#i-pen"/></svg>Written by Ines Moreau</span><span><svg class="ico" aria-hidden="true"><use href="#i-cal"/></svg>Tuesday, August 4, 2026</span></div>
+      <h3>Scaling an AI Roster: From One Model to Ten</h3>
+      <p>Workflows, dashboards and quality checks that keep you in control.</p>
+      <span class="corner-btn sq-btn sm"><svg><use href="#i-ar"/></svg></span>
+    </a>
+  </div>
+
+  <div class="sec-foot">
+    <div class="ticks" data-active="10"></div>
+    <a href="#labs" class="cta-link">More articles from Fune Labs® <span class="sq-btn"><svg><use href="#i-ar"/></svg></span></a>
+  </div>
+</section>
+
+<!-- ======================= MARQUEE BAND ======================= -->
+<div class="band" aria-hidden="true">
+  <div class="band-row r1" data-band='<span class="wm">fu—ne<sup>™</sup></span>'></div>
+  <div class="band-row r2 rev" data-band='<span class="tag">Your AI models, fully automated.</span>'></div>
+  <div class="band-row r3 rev" data-band='<span class="wm">fu—ne<sup>™</sup></span>'></div>
+  <div class="band-row r4" data-band='<span class="tag">The smarter way to automate, create, and scale with AI.</span>'></div>
+  <div class="band-row r5" data-band='<span class="wm">fu—ne<sup>™</sup></span>'></div>
+  <div class="band-row r6 rev" data-band='<span class="tag">Where managing AI content gets simple.</span>'></div>
+</div>
+
+<!-- ======================= CONTACT ======================= -->
+<section class="contact" id="contact">
+  <div class="card talk"><h2 class="reveal">Let's Talk.</h2></div>
+
+  <div class="c-left">
+    <div class="card follow reveal">
+      <h4><svg class="ico" aria-hidden="true"><use href="#i-heart"/></svg>Follow us</h4>
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn"><svg><use href="#s-in"/></svg></a>
+        <a href="#" aria-label="X"><svg><use href="#s-x"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg><use href="#s-ig"/></svg></a>
+        <a href="#" aria-label="Threads"><svg><use href="#s-th"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg><use href="#s-yt"/></svg></a>
+        <a href="#" aria-label="WhatsApp"><svg><use href="#s-wa"/></svg></a>
+      </div>
+    </div>
+    <div class="card offer reveal d1" data-offer>
+      <button aria-expanded="false"><h4><svg class="ico" aria-hidden="true"><use href="#i-layers"/></svg>What we offer</h4><svg><use href="#i-plus"/></svg></button>
+      <div class="ans"><div>
+        <ul>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-persona"/></svg>AI model creation</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-image"/></svg>AI photo &amp; video generation</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>24/7 AI fan chat</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-send"/></svg>Automated publishing</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-activity"/></svg>Live revenue dashboard</li>
+        </ul>
+      </div></div>
+    </div>
+  </div>
+
+  <form class="form reveal d1" data-form novalidate>
+    <div class="form-head"><h4><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>Got a question, challenge, or idea?</h4><p>Fill out the form — we’ll get back to you shortly.</p></div>
+    <label class="field"><span class="sr-only">Your Name</span><svg class="field-ico" aria-hidden="true"><use href="#i-user"/></svg><input name="name" placeholder="Your Name" required autocomplete="name"></label>
+    <label class="field"><span class="sr-only">Your Email</span><svg class="field-ico" aria-hidden="true"><use href="#i-mail"/></svg><input name="email" type="email" placeholder="Your Email" required autocomplete="email"></label>
+    <label class="field"><span class="sr-only">Your Message</span><svg class="field-ico" aria-hidden="true"><use href="#i-chat"/></svg><textarea name="message" placeholder="Your Message"></textarea></label>
+    <button class="btn" type="submit">Send Message <svg><use href="#i-ar"/></svg></button>
+    <p class="form-msg" aria-live="polite" data-dyn></p>
+  </form>
+
+  <div class="c-row">
+    <div class="card c-badge reveal">
+      <div class="badge">
+        <svg class="ring" viewBox="0 0 120 120"><defs><path id="ring2" d="M60 60 m-46 0 a46 46 0 1 1 92 0 a46 46 0 1 1 -92 0"/></defs><text><textPath href="#ring2">we automate the work · you lead the growth ·</textPath></text></svg>
+        <span class="core-dot"></span>
+      </div>
+      <p>The smarter way to automate, create and scale with AI.</p>
+    </div>
+    <div class="card c-logo reveal d1">
+      <canvas class="particles" data-particles="logo"></canvas>
+      <a class="mail" href="mailto:hello@yourcompany.com"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg>hello@yourcompany.com</a>
+      <span class="wm">fu—ne<sup>™</sup></span>
+      <address><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><span>Main Street 1<br>811 01 — Bratislava<br><b>Slovakia, EU</b></span></address>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="footer" id="newsletter">
+  <div class="card f-nav">
+    <div>
+      <div class="mark"><i></i><i></i></div>
+      <ul>
+        <li><a href="#home">Home</a></li><li><a href="#work">Work</a></li><li><a href="#dashboard">Dashboard</a></li><li><a href="#services">Services</a></li><li><a href="#process">Process</a></li>
+        <li><a href="#analytics">Smart Analytics</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li><li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+    </div>
+    <div class="col2">
+      <div class="mark"><i style="width:4px;background:var(--muted-2)"></i><i style="width:12px;background:var(--accent)"></i></div>
+      <ul><li><a href="#team">The Team</a></li><li><a href="#labs">Fune Labs®</a></li><li><a href="#contact">Contact</a></li></ul>
+      <ul class="small"><li><a href="#">Terms &amp; Service</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">GDPR Compliance</a></li><li><a href="#">Data Protection</a></li><li><a href="#">404</a></li></ul>
+    </div>
+  </div>
+
+  <div class="card news">
+    <h4><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg>Keep up with our journey and updates</h4>
+    <p>Get the latest news and insights straight to your inbox. <span>*</span></p>
+    <form data-form novalidate>
+      <input name="name" placeholder="Your Name" aria-label="Your Name" autocomplete="name">
+      <div class="row">
+        <input name="email" type="email" placeholder="Your Email" aria-label="Your Email" required autocomplete="email">
+        <button class="sq-btn" type="submit" aria-label="Subscribe"><svg><use href="#i-ar"/></svg></button>
+      </div>
+      <p class="form-msg" aria-live="polite" data-dyn></p>
+    </form>
+    <p class="terms">By submitting, you agree to our <a href="#">Terms</a>.</p>
+    <p class="spam">No spam, just useful updates.</p>
+  </div>
+
+  <div class="f-bottom">
+    <div class="card">
+      <p class="copy">2021–<span data-year>2026</span> © [ FU—NE ] All rights reserved.</p>
+      <div class="made"><span><svg viewBox="0 0 24 24"><use href="#p-cube"/></svg>Built with care</span><span><svg viewBox="0 0 24 24"><use href="#i-dots"/></svg>Made in Bratislava</span></div>
+    </div>
+    <div class="card"><p class="co"><b>FU—NE</b>, registered in Slovakia, is an AI agency specializing in automating and managing AI content.</p></div>
+    <div class="card">
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn"><svg><use href="#s-in"/></svg></a>
+        <a href="#" aria-label="X"><svg><use href="#s-x"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg><use href="#s-ig"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg><use href="#s-yt"/></svg></a>
+        <a href="#" aria-label="WhatsApp"><svg><use href="#s-wa"/></svg></a>
+      </div>
+    </div>
+    <a href="#home" class="card to-top" aria-label="Back to top"><svg><use href="#i-au"/></svg></a>
+  </div>
+</footer>
+
+<script src="i18n.js?v=6"></script>
+<script src="script.js?v=7"></script>
+</body>
+</html>

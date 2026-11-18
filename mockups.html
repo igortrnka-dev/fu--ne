@@ -1,0 +1,90 @@
+<!doctype html>
+<!-- Marketing mockups of the Fune dashboard.
+     Open: mockups.html?m=hero|browser|laptop|phone&lang=en|sk
+     Export PNGs: bash tools/export-mockups.sh -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Fune — dashboard mockups</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=17">
+  <style>
+    html, body { height: 100%; }
+    body.mk {
+      margin: 0; overflow: hidden;
+      background:
+        radial-gradient(55% 60% at 50% 46%, rgba(38, 178, 101, .22), rgba(38, 178, 101, 0) 72%),
+        radial-gradient(120% 90% at 50% 120%, #1a1b1d, #0d0e0f 60%);
+    }
+    .stage { position: relative; width: 100vw; height: 100vh; display: grid; place-items: center; }
+    .mode { display: none; }
+    body[data-m="browser"] .m-browser, body[data-m="laptop"] .m-laptop,
+    body[data-m="phone"] .m-phone, body[data-m="hero"] .m-hero { display: block; }
+    .m-browser { width: 84vw; }
+    .m-laptop { width: 72vw; margin-top: -2vh; }
+    .m-phone { height: 86vh; display: none; }
+    body[data-m="phone"] .m-phone { display: flex; gap: 4vw; align-items: center; }
+    .m-phone .mock-phone { height: 86vh; width: auto; }
+    .m-phone .shot-card { width: 34vw; }
+    .m-hero { width: 92vw; }
+    .m-hero .showcase { padding: 0; }
+    .mk-logo { position: absolute; left: 3.2vw; top: 3.6vh; font-size: 2.2vw; letter-spacing: -0.06em; color: var(--accent); }
+  </style>
+</head>
+<body class="mk" data-m="hero">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></g></symbol>
+  </svg>
+
+  <div class="stage">
+    <span class="mk-logo" hidden>fu—ne</span>
+
+    <!-- Browser window -->
+    <figure class="mode m-browser mock-browser">
+      <div class="mb-bar"><i></i><i></i><i></i><span class="mb-url"><svg class="ico"><use href="#i-lock"/></svg>fune · dashboard</span></div>
+      <img data-k="desk" alt="Fune dashboard">
+    </figure>
+
+    <!-- Laptop -->
+    <figure class="mode m-laptop mock-laptop">
+      <div class="ml-screen"><img data-k="desk" alt="Fune dashboard on a laptop"></div>
+      <div class="ml-base"></div>
+    </figure>
+
+    <!-- Phone + card -->
+    <div class="mode m-phone">
+      <figure class="mock-phone"><div class="mp-screen"><span class="mp-status"><b>9:41</b><span class="mp-ic"><i></i><i></i><i></i><i class="bat"></i></span></span><img data-k="mobile" alt="Fune dashboard on a phone"></div><span class="island"></span></figure>
+      <figure class="shot-card"><img data-k="chat" alt="Fan chat"></figure>
+    </div>
+
+    <!-- Hero composition (same as the website section) -->
+    <div class="mode m-hero">
+      <div class="showcase">
+        <div class="sc-glow"></div>
+        <figure class="mock-browser sc-main">
+          <div class="mb-bar"><i></i><i></i><i></i><span class="mb-url"><svg class="ico"><use href="#i-lock"/></svg>fune · dashboard</span></div>
+          <img data-k="desk" alt="Fune dashboard">
+        </figure>
+        <figure class="shot-card sc-chat"><img data-k="chat" alt="Fan chat"></figure>
+        <figure class="shot-card sc-profit"><img data-k="profit" alt="Today’s net profit"></figure>
+        <figure class="mock-phone sc-phone"><div class="mp-screen"><span class="mp-status"><b>9:41</b><span class="mp-ic"><i></i><i></i><i></i><i class="bat"></i></span></span><img data-k="mobile" alt="Fune dashboard on a phone"></div><span class="island"></span></figure>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const p = new URLSearchParams(location.search);
+    const lang = p.get('lang') === 'sk' ? 'sk' : 'en';
+    document.documentElement.lang = lang;
+    document.body.dataset.m = ['hero', 'browser', 'laptop', 'phone'].includes(p.get('m')) ? p.get('m') : 'hero';
+    if (p.get('logo') === '1') document.querySelector('.mk-logo').hidden = false;
+    document.querySelectorAll('img[data-k]').forEach((img) => {
+      img.src = 'product-shots/fune-dashboard-' + img.dataset.k + '-' + lang + '.png';
+    });
+  </script>
+</body>
+</html>

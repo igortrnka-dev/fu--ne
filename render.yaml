@@ -1,0 +1,12 @@
+# Render Blueprint: deploys the FU—NE website as a free static site.
+# Render → New → Blueprint → pick this repository → Apply.
+services:
+  - type: web
+    name: fune
+    runtime: static
+    buildCommand: bash tools/build.sh
+    staticPublishPath: ./public
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
