@@ -1,6 +1,10 @@
 #!/bin/bash
 # Export dashboard product shots (2x PNG) with headless Google Chrome.
 #
+# NOTE: this shoots the old static demo (dashboard.html). The shots the website shows (desk, mobile,
+# profit, roster, chat, queue in assets/dashboard and product-shots) now come from the real app:
+# see scripts/capture-landing.ts in the fune-app repository. Use this script only for the demo page.
+#
 # 1) Start a local server in the FUNE folder:   python3 -m http.server 5173
 # 2) Run:                                        bash tools/export-shots.sh
 #    Only some parts:                            ONLY="desk mobile" bash tools/export-shots.sh
