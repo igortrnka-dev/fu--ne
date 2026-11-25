@@ -479,7 +479,9 @@
   function particles(canvas, opts) {
     const ctx = canvas.getContext('2d');
     let W, H, P = [], dpr = Math.min(devicePixelRatio || 1, 2), visible = true;
-    const rgb = getComputedStyle(document.documentElement).getPropertyValue('--accent-rgb').trim() || '46,193,111';
+    const rgb = getComputedStyle(document.documentElement).getPropertyValue('--accent-rgb').trim() || '238,106,18';
+    // Neutral particles take the page's ink colour (dark on the light page).
+    const ink = getComputedStyle(document.documentElement).getPropertyValue('--particle-rgb').trim() || '235,240,236';
     const resize = () => {
       W = canvas.clientWidth; H = canvas.clientHeight;
       canvas.width = W * dpr; canvas.height = H * dpr;
@@ -513,10 +515,10 @@
         if (p.x > W + 20) p.x = -20; if (p.x < -20) p.x = W + 20;
         if (p.y < -20) p.y = H + 20; if (p.y > H + 20) p.y = -20;
         const a = p.a * (0.7 + Math.sin(p.tw) * 0.3);
-        const col = p.tint ? `rgba(${rgb},${a})` : `rgba(235,240,236,${a})`;
+        const col = p.tint ? `rgba(${rgb},${a})` : `rgba(${ink},${a})`;
         if (p.r > 2) {
           const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r);
-          g.addColorStop(0, col); g.addColorStop(1, p.tint ? `rgba(${rgb},0)` : 'rgba(235,240,236,0)');
+          g.addColorStop(0, col); g.addColorStop(1, p.tint ? `rgba(${rgb},0)` : `rgba(${ink},0)`);
           ctx.fillStyle = g;
         } else ctx.fillStyle = col;
         ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fill();
@@ -688,4 +690,13 @@
   };
   render();
   document.addEventListener('fune:lang', render);
+})();
+
+// Frosted header once the page has scrolled (styles.css .header.scrolled).
+(() => {
+  const header = document.querySelector('.header');
+  if (!header) return;
+  const update = () => header.classList.toggle('scrolled', window.scrollY > 40);
+  update();
+  window.addEventListener('scroll', update, { passive: true });
 })();
