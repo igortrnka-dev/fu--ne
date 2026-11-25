@@ -617,3 +617,25 @@
   addEventListener('resize', onScroll);
   onScroll();
 })();
+
+/* Phone CTA bar: shows once the hero is scrolled past, hides again at the final CTA and Contact. */
+(() => {
+  const bar = document.querySelector('[data-cta-bar]');
+  if (!bar) return;
+  const hero = document.querySelector('.hero');
+  const ends = [document.querySelector('.cta-band'), document.querySelector('#contact')].filter(Boolean);
+  const seen = new Map();
+  const update = () => {
+    const pastHero = seen.get(hero) === false;
+    const atEnd = ends.some((e) => seen.get(e));
+    const show = pastHero && !atEnd;
+    bar.classList.toggle('show', show);
+    bar.setAttribute('aria-hidden', String(!show));
+    bar.querySelectorAll('a').forEach((a) => a.setAttribute('tabindex', show ? '0' : '-1'));
+  };
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((en) => seen.set(en.target, en.isIntersecting));
+    update();
+  }, { threshold: 0 });
+  [hero, ...ends].forEach((el) => el && io.observe(el));
+})();

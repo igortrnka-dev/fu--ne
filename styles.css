@@ -1208,3 +1208,51 @@ body.menu-open .menu nav a { opacity: 1; transform: none; }
   .login-btn { width: 36px; padding: 0; justify-content: center; }
   .login-btn span { display: none; }
 }
+
+/* ===== CTA-first: "Start free" everywhere, a demo as the second choice ===== */
+.head-cta { display: inline-flex; align-items: center; height: 40px; padding: 0 18px; border-radius: var(--radius); background: var(--accent); color: var(--accent-ink); font-size: 15px; font-weight: 500; white-space: nowrap; transition: background .25s; }
+.head-cta:hover { background: var(--accent-hover); }
+.menu nav a.menu-cta { color: var(--accent); }
+.hero-cta { flex-direction: column; align-items: flex-start; gap: 16px; }
+.hero-cta-btns { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.btn-xl { height: 64px; padding: 0 32px; font-size: 18px; font-weight: 500; box-shadow: 0 10px 40px rgba(var(--accent-rgb), .35); }
+.btn-ghost { background: transparent; color: var(--text); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .22); }
+.btn-ghost:hover { background: rgba(255, 255, 255, .08); }
+.cta-note { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; font-size: 14px; color: var(--silver); }
+.cta-note .ico { width: 16px; height: 16px; color: var(--accent); }
+.cta-note span { color: var(--muted-2); }
+.proc-demo .inline-link, .inline-link { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+/* Final band before Contact */
+.cta-band { padding: 120px var(--pad, 40px); }
+.cta-band-in { max-width: 1100px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 80px 40px; border-radius: 32px;
+  background: radial-gradient(70% 90% at 50% 0%, rgba(var(--accent-rgb), .22), transparent 70%), var(--card); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .06); }
+.cta-band h2 { font-size: clamp(40px, 5.6vw, 84px); font-weight: 500; letter-spacing: -0.05em; line-height: 1; color: #fff; }
+.cta-band .accent { color: var(--accent); }
+.cta-sub { font-size: 19px; color: var(--silver); max-width: 620px; }
+.cta-kicker { display: inline-flex; align-items: center; gap: 10px; font-size: 14px; color: var(--silver); padding: 8px 14px; border-radius: 999px; background: rgba(255, 255, 255, .05); }
+.cta-kicker .live-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px rgba(var(--accent-rgb), .2); }
+.cta-band .hero-cta-btns { justify-content: center; }
+/* Phone CTA bar */
+.cta-bar { display: none; }
+@media (max-width: 760px) {
+  .head-cta { height: 36px; padding: 0 12px; font-size: 14px; }
+  .btn-xl { height: 56px; padding: 0 22px; font-size: 17px; width: 100%; justify-content: center; }
+  .hero-cta-btns { width: 100%; }
+  .hero-cta-btns .btn-ghost { width: 100%; justify-content: center; }
+  .cta-band { padding: 70px 16px; }
+  .cta-band-in { padding: 52px 20px; border-radius: 24px; }
+  .cta-sub { font-size: 16px; }
+  .cta-bar { display: flex; gap: 8px; position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom)); z-index: 80;
+    padding: 8px; border-radius: 20px; background: rgba(22, 23, 25, .9); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 16px 50px rgba(0, 0, 0, .5), inset 0 0 0 1px rgba(255, 255, 255, .08);
+    transform: translateY(140%); transition: transform .35s var(--ease); }
+  .cta-bar.show { transform: none; }
+  .cta-bar .btn { height: 50px; font-size: 16px; }
+  .cta-bar .btn:first-child { flex: 1; justify-content: center; }
+  .cta-bar .btn-ghost { width: 50px; padding: 0; justify-content: center; }
+}
+@media (max-width: 480px) {
+  /* Small phones: the hero button and the bottom bar carry the CTA; the header keeps Log in. */
+  .head-cta { display: none; }
+}
+.hero-cta .cta-note { max-width: none; margin-top: 0; font-size: 14px; }
