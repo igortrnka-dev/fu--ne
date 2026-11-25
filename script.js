@@ -585,6 +585,8 @@
       u.searchParams.set('lang', lang);
       a.setAttribute('href', u.toString());
     });
+    // Rolling-text labels rebuild their letters from the translated text.
+    document.dispatchEvent(new Event('fune:lang'));
   }
 
   $$('[data-lang]').forEach(b => b.addEventListener('click', () => {
@@ -638,4 +640,52 @@
     update();
   }, { threshold: 0 });
   [hero, ...ends].forEach((el) => el && io.observe(el));
+})();
+
+
+/* Rolling text on buttons and links (our own take on the "rolling text" hover effect): on hover each
+   letter rolls up and an identical copy rolls in from below, one after another. The real label stays
+   in a visually hidden span, so screen readers read it normally and the translator can still swap it;
+   the letters are rebuilt from it after every language change. */
+(() => {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const targets = document.querySelectorAll('.btn, .head-cta, .cta-link, .menu nav a, .login-btn > span');
+  const built = [];
+  targets.forEach((el) => {
+    const node = [...el.childNodes].find((n) => n.nodeType === 3 && /\S/.test(n.nodeValue));
+    if (!node) return;
+    const src = document.createElement('span');
+    src.className = 'roll-src';
+    node.replaceWith(src);
+    src.appendChild(node);
+    const vis = document.createElement('span');
+    vis.className = 'roll';
+    vis.setAttribute('aria-hidden', 'true');
+    vis.setAttribute('data-dyn', '');
+    src.after(vis);
+    (el.matches('.login-btn > span') ? el.parentElement : el).classList.add('has-roll');
+    built.push({ src, vis });
+  });
+  const render = () => {
+    built.forEach(({ src, vis }) => {
+      const text = src.textContent.trim();
+      if (vis.dataset.text === text) return;
+      vis.dataset.text = text;
+      vis.textContent = '';
+      [...text].forEach((ch, i) => {
+        const c = ch === ' ' ? '\u00a0' : ch;
+        const l = document.createElement('span');
+        l.className = 'rl';
+        l.style.setProperty('--i', i);
+        const a = document.createElement('span');
+        const b = document.createElement('span');
+        a.textContent = c;
+        b.textContent = c;
+        l.append(a, b);
+        vis.appendChild(l);
+      });
+    });
+  };
+  render();
+  document.addEventListener('fune:lang', render);
 })();

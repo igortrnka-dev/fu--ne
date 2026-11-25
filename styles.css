@@ -1256,3 +1256,11 @@ body.menu-open .menu nav a { opacity: 1; transform: none; }
   .head-cta { display: none; }
 }
 .hero-cta .cta-note { max-width: none; margin-top: 0; font-size: 14px; }
+
+/* Rolling text (script.js): letters roll up on hover, one after another. */
+.roll-src { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.roll { display: inline-flex; white-space: nowrap; }
+.rl { display: inline-block; position: relative; overflow: hidden; height: 1.2em; line-height: 1.2em; vertical-align: middle; }
+.rl > span { display: block; transition: transform .5s cubic-bezier(.2, .7, .1, 1); transition-delay: calc(var(--i) * 16ms); }
+.rl > span + span { position: absolute; left: 0; top: 100%; }
+.has-roll:hover .rl > span, .has-roll:focus-visible .rl > span { transform: translateY(-100%); }
